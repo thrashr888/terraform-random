@@ -4,10 +4,6 @@ resource "template_file" "timestamp" {
   provisioner "local-exec" {
     command = "date +%s > timestamp.txt"
   }
-
-  provisioner "local-exec" {
-    command = "terraform taint template_file.timestamp"
-  }
 }
 
 output "timestamp" {
