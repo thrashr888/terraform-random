@@ -5,3 +5,9 @@ data "template_file" "random" {
     value = "${uuid()}"
   }
 }
+
+resource "null_resource" "default" {
+  triggers {
+    template = "${data.template_file.random.rendered}"
+  }
+}
