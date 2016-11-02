@@ -11,3 +11,7 @@ resource "null_resource" "default" {
     template = "${data.template_file.random.rendered}"
   }
 }
+
+output "random" {
+  value = "${data.template_file.random.rendered}"
+}
