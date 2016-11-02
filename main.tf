@@ -1,5 +1,5 @@
-resource "template_file" "random" {
-  filename = "${value}"
+data "template_file" "random" {
+  template = "${value}"
 
   vars {
     value = "${uuid()}"
