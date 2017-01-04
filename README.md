@@ -1,3 +1,3 @@
 # terraform-random
 
-This is a sample repository of TF interaction with GitHub in Atlas.
+This is a sample repository of Terraform interaction with GitHub in Terraform Enterprise.
