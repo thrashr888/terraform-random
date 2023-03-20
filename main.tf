@@ -16,6 +16,6 @@ resource "random" "random" {
 }
 
 output "random" {
-  value = random_id.random.hex
+  value = random.random.hex
 }
 
