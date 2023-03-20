@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-resource "random" "random" {
+resource "random_id" "random" {
   keepers = {
     uuid = uuid()
   }
@@ -16,6 +16,6 @@ resource "random" "random" {
 }
 
 output "random" {
-  value = random.random.hex
+  value = random_id.random.hex
 }
 
